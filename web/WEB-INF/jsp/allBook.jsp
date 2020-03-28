@@ -14,7 +14,7 @@
             <th>书籍价格</th>
         </tr>
         <tbody>
-        <c:forEach var="book" items="${books}">
+        <c:forEach var="book" items="${pageInfo.list}">
             <tr>
                 <td>${book.id}</td>
                 <td>${book.title}</td>
@@ -29,6 +29,20 @@
         </tbody>
     </table>
 </div>
-
+<div>
+    <a href="${pageContext.request.contextPath}/book/allBook?startPage=${pageInfo.navigateFirstPage}">首页</a>
+    <c:if test="${pageInfo.hasPreviousPage}">
+        <a href="${pageContext.request.contextPath}/book/allBook?startPage=${pageInfo.pageNum-1}">上一页</a>
+    </c:if>
+    <c:forEach items="${pageInfo.navigatepageNums}" var="pageNum">
+        <c:if test="${pageNum == pageInfo.pageNum}">
+            <a href="${pageContext.request.contextPath}/book/allBook?startPage=${pageNum}">${pageNum}</a>
+        </c:if>
+    </c:forEach>
+    <c:if test="${pageInfo.hasNextPage}">
+        <a href="${pageContext.request.contextPath}/book/allBook?startPage=${pageInfo.pageNum+1}">下一页</a>
+    </c:if>
+    <a href="${pageContext.request.contextPath}/book/allBook?startPage=${pageInfo.navigateLastPage}">尾页</a>
+</div>
 </body>
 </html>

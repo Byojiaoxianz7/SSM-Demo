@@ -39,4 +39,8 @@ public class BooksServiceImpl implements BooksService {
     public Books queryBookById(int id) {
         return booksMapper.queryBookById(id);
     }
+
+    public int queryBookCount() {
+        return booksMapper.queryBookCount();
+    }
 }

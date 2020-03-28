@@ -36,4 +36,9 @@ public interface BooksMapper {
      * 根据 id 查询书
      */
     Books queryBookById(@Param(value = "bookId") int id);
+
+    /**
+     * 查询书籍总条数
+     */
+    int queryBookCount();
 }

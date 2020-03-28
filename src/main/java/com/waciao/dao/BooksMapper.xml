@@ -23,4 +23,8 @@
     <select id="queryBookById" resultType="com.waciao.pojo.Books" parameterType="int">
         select * from books where id = #{bookId}
     </select>
+
+    <select id="queryBookCount" resultType="int">
+        select count(*) from books
+    </select>
 </mapper>
