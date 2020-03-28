@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context" xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+	                   http://www.springframework.org/schema/beans/spring-beans-4.2.xsd
+	                   http://www.springframework.org/schema/context
+        			   http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
+
+    <!-- 1. 关联数据库配置文件-->
+    <context:property-placeholder location="classpath:db.properties"/>
+    <!-- 2. 配置数据源 c3p0 -->
+    <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+        <property name="jdbcUrl" value="${db.url}"/>
+        <property name="driverClass" value="${db.driver}"/>
+        <property name="user" value="${db.username}"/>
+        <property name="password" value="${db.password}"/>
+
+        <property name="autoCommitOnClose" value="false"/>
+        <property name="acquireIncrement" value="3"/>
+        <property name="initialPoolSize" value="10"/>
+        <property name="minPoolSize" value="2"/>
+        <property name="maxPoolSize" value="10"/>
+    </bean>
+
+    <!-- 3. SqlSessionFactory -->
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+
+    <!-- 4. 配置 dao 接口扫描包，动态的实现了 Dao 接口，可以注入到 Spring 容器中 -->
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <!--  注入 sqlSessionFactory -->
+        <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
+        <!-- 扫描到 dao 包 -->
+        <property name="basePackage" value="com.waciao.dao"/>
+    </bean>
+</beans>

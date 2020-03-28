@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.waciao.dao.BooksMapper">
+    <insert id="addBook" parameterType="com.waciao.pojo.Books">
+        insert into books(title, price) values (#{title}, #{price})
+    </insert>
+
+    <delete id="deleteBookById" parameterType="int">
+        delete from books where id = #{bookId}
+    </delete>
+
+    <update id="updateBook" parameterType="com.waciao.pojo.Books">
+        update books set title = #{title}, price = #{price}
+        where id = #{id}
+    </update>
+    
+    <select id="queryAllBook" resultType="com.waciao.pojo.Books">
+        select * from books
+    </select>
+
+    <select id="queryBookById" resultType="com.waciao.pojo.Books" parameterType="int">
+        select * from books where id = #{bookId}
+    </select>
+</mapper>
