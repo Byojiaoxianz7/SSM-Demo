@@ -1,10 +1,12 @@
-# SSM-Demo
+<h1 align="center"><a href="https://github.com/SSM-Demo" target="_blank">SSM-Demo</a></h1>
+
+> 一个最简单的 SpringMVC + Spring + Mybatis 框架整合小 Demo，保证都能看懂，并且顺利运行
+
+------------------------------
 
 ## 说明
 
 - 作者：Waciao
-
-- 一个最简单的 SpringMVC + Spring + Mybatis 框架整合 Demo，保证都能看懂，并且顺利运行
 
 - 环境：
 
