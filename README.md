@@ -1,7 +1,27 @@
-# SSM 整合
+# SSM-Demo
 
-一个非常简单的 SSM 框架整合实力
+## 说明
 
-简单到不能再简单，只有基本的增删改查操作
+- 作者：Waciao
 
-非常适合初学者学习
+- 一个最简单的 SpringMVC + Spring + Mybatis 框架整合 Demo，保证都能看懂，并且顺利运行
+
+- 环境：
+
+    - JDK 1.8.0_211
+    - Maven 3.6.3
+    - Mysql 8.0.19
+    - Tomcat 9
+    - IntelliJ IDEA
+    - SSM:
+    
+        - Spring: 5.2.4
+        - mybatis: 3.5.4
+        - spring-mybatis: 2.0.4
+        
+## 联系
+
+If you have some questions after you see this article,you can tell your doubts in the comments area or you can find some info by clicking these links.
+
+- [Gitub@Byoxiaoxianz7](https://github.com/byojiaoxianz7)
+    
