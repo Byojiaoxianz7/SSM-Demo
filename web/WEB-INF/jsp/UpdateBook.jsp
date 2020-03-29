@@ -9,20 +9,29 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title></title>
+    <title>修改书籍</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
 </head>
 <body>
-<form action="${pageContext.request.contextPath}/book/updateBook" method="post">
-    <!-- name 必须要与实体类的一致 -->
-
-    <!-- 前端传递隐藏域
-        这里不传 id 是没有办法修改的，看 sql 语句就知道了
-     -->
-    <input type="hidden" name="id" value="${QBooks.id}">
-    书籍名称： <input type="text" name="title" value="${QBooks.title}"/><br>
-    书籍价格： <input type="text" name="price" value="${QBooks.price}"><br>
-    <input type="submit" name="bookSubmit" value="修改"/>
-</form>
-</form>
+<div class="row">
+    <div class="col-lg-4">
+        <form action="${pageContext.request.contextPath}/book/updateBook" method="post">
+            <input type="hidden" name="id" value="${QBooks.id}">
+            <div class="input-group">
+                <span class="input-group-addon" id="basic-addon1">书名</span>
+                <input type="text" name="title" class="form-control" placeholder="${QBooks.title}"
+                       aria-describedby="basic-addon1">
+            </div>
+            <br>
+            <div class="input-group">
+                <span class="input-group-addon">价格</span>
+                <input type="text" name="price" class="form-control" aria-label="" placeholder="${QBooks.price}">
+            </div>
+            <br>
+            <input type="submit" value="修改" name="submit" class="btn btn-default">
+        </form>
+    </div>
+</div>
 </body>
 </html>

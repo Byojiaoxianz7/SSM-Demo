@@ -45,7 +45,7 @@ public class BookController {
                        @RequestParam(name = "pageSize", defaultValue = "5") Integer pageSize) {
         PageHelper.startPage(startPage, pageSize);
         List<Books> booksList = booksService.queryAllBook();
-        PageInfo pageInfo = new PageInfo<Books>(booksList, 3);
+        PageInfo pageInfo = new PageInfo(booksList, 5);
         model.addAttribute("pageInfo", pageInfo);
         return "allBook";
     }
