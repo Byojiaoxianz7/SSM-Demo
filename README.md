@@ -30,5 +30,5 @@
 
 If you have some questions after you see this article,you can tell your doubts in the comments area or you can find some info by clicking these links.
 
-- [Gitub@Byoxiaoxianz7](https://github.com/byojiaoxianz7)
+- [Github@Byoxiaoxianz7](https://github.com/byojiaoxianz7)
     
