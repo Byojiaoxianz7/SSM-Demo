@@ -10,20 +10,20 @@
 
 - 环境：
 
-    - JDK 1.8.0_211
-    - Maven 3.6.3
-    - Mysql 8.0.19
-    - Tomcat 9
+    - JDK        1.8.0_211
+    - Maven      3.6.3
+    - Mysql      8.0.19
+    - Tomcat     9
+    - Pagehelper 5.1.11
     - IntelliJ IDEA
-    - SSM:
-    
-        - Spring: 5.2.4
-        - mybatis: 3.5.4
-        - spring-mybatis: 2.0.4
+    - SSM
+        - Spring           5.2.4
+        - mybatis          3.5.4
+        - spring-mybatis   2.0.4
 
 ## 日志
 
-- 2020年3月29日：使用 pagehelper 实现分页查询
+- 2020年3月29日：使用 Pagehelper 实现分页查询
 - 2020年3月28日：完成基本整合，实现增删改查操作
         
 ## 联系
