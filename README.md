@@ -21,28 +21,10 @@
         - mybatis          3.5.4
         - spring-mybatis   2.0.4
         
-## 脚本
+## 使用
 
-```sql
-SET NAMES utf8mb4;
-SET FOREIGN_KEY_CHECKS = 0;
 
-DROP TABLE IF EXISTS `books`;
-CREATE TABLE `books`  (
-  `id` int(0) NOT NULL AUTO_INCREMENT,
-  `title` varchar(20) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
-  `price` int(0) NULL DEFAULT NULL,
-  PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 29 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
-INSERT INTO `books` VALUES (24, '挪威的森林', 35);
-INSERT INTO `books` VALUES (25, '寻羊冒险记', 23);
-INSERT INTO `books` VALUES (26, '解忧杂货店', 21);
-INSERT INTO `books` VALUES (27, '时间简史', 33);
-INSERT INTO `books` VALUES (28, '且听风吟', 12);
-
-SET FOREIGN_KEY_CHECKS = 1;
-```
 
 ## 日志
 
