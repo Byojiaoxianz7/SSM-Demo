@@ -38,15 +38,15 @@
 
 - 书籍列表
 
-![书籍列表](https://raw.githubusercontent.com/Byojiaoxianz7/ssm-bms/master/images/%E4%B9%A6%E7%B1%8D%E5%88%97%E8%A1%A8%E9%A1%B5%E9%9D%A2.png)
+![书籍列表](https://raw.githubusercontent.com/Byojiaoxianz7/SSM-Demo/master/images/%E4%B9%A6%E7%B1%8D%E5%88%97%E8%A1%A8%E9%A1%B5%E9%9D%A2.png)
 
 - 新增书籍
 
-![新增书籍](https://raw.githubusercontent.com/Byojiaoxianz7/ssm-bms/master/images/%E6%96%B0%E5%A2%9E%E4%B9%A6%E7%B1%8D%E9%A1%B5%E9%9D%A2.png)
+![新增书籍](https://raw.githubusercontent.com/Byojiaoxianz7/SSM-Demo/master/images/%E6%96%B0%E5%A2%9E%E4%B9%A6%E7%B1%8D%E9%A1%B5%E9%9D%A2.png)
 
 - 修改书籍
 
-![修改书籍](https://raw.githubusercontent.com/Byojiaoxianz7/ssm-bms/master/images/%E4%BF%AE%E6%94%B9%E4%B9%A6%E7%B1%8D%E9%A1%B5%E9%9D%A2.png)
+![修改书籍](https://raw.githubusercontent.com/Byojiaoxianz7/SSM-Demo/master/images/%E4%BF%AE%E6%94%B9%E4%B9%A6%E7%B1%8D%E9%A1%B5%E9%9D%A2.png)
         
 ## 联系
 
