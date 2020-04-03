@@ -1,4 +1,4 @@
-<h1 align="center"><a href="https://github.com/SSM-Demo" target="_blank">ssm-bms</a></h1>
+<h1 align="center"><a href="https://github.com/byojiaoxianz7/SSM-Demo" target="_blank">SSM-Demo</a></h1>
 
 > 一个最简单的 SpringMVC + Spring + Mybatis 框架整合 Demo，实现了对数据的增删改查以及前端展示数据的操作，并在此基础上逐步增加一些其他功能，比如分页等
 
