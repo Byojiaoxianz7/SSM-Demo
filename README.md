@@ -21,7 +21,7 @@
         
 ## 使用
 
-[Usage.md](https://github.com/Byojiaoxianz7/ssm-bms/blob/master/Usage.md)
+[Usage.md](https://github.com/weizujie/ssm-bms/blob/master/Usage.md)
 
 
 
@@ -48,5 +48,5 @@
         
 ## 联系
 
-- [Github@Byoxiaoxianz7](https://github.com/byojiaoxianz7)
+- [Github@weizujie](https://github.com/weizujie)
     
