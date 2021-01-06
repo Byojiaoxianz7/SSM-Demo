@@ -21,7 +21,7 @@
         
 ## 使用
 
-[Usage.md](https://github.com/weizujie/ssm-bms/blob/master/Usage.md)
+[Usage.md](https://github.com/weizujie/SSM-Demo/blob/master/Usage.md)
 
 
 
